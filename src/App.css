@@ -2,37 +2,159 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo{
+  height: 70px;
+  width: 90px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#postcards{
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* NAVBAR.JSX */
+.navbar{
+ /* background-color: rgb(4, 4, 62); */
+ background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+ /* background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%); */
+}
+
+.nav-item{
+  font-size:large;
+}
+
+.navtext{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* LOGINPAGE.JSX */
+.bgImg{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  font-size:370%;
+  font-weight: 500;
+  padding-bottom: 0%;
 }
+
+/* .login{
+  height:30px;
+  width:30px;
+  margin-left: 160px;
+  IMG
+} */
+
+.login{
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+}
+
+.contact{
+  height:30px;
+  width:30px;
+  margin-left: 40px;
+}
+
+#loginimg{
+   height: 170px;
+   width: 200px;
+   margin: auto;
+}
+
+
+
+/* Cards.jsx */
+#body{
+  background-color: rgb(245, 243, 250);
+  /* background-color: aliceblue; */
+}
+
+.homecard:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* DISLPAY PAGE */
+.display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayimg{
+  box-shadow: -4px 1px 20px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  width: 500px;
+  height: 440px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.displaytext{
+  border: solid black;
+  width: 450px;
+  /* font-family: 'Alkatra', cursive; */
+  font-family: 'Ubuntu', sans-serif;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-weight: 50;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#type{
+  font-size: 40px;
+  text-align: center;
+
+}
+
+/* FULL SCREEN */
+/* Safari syntax */
+
+.fullscreenimg{
+  width: 670px;
+  height: 640px;
+  object-fit: contain;
+}
+.image:-webkit-full-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* IE11 */
+.image:-ms-fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Standard syntax */
+.image:fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+
+
